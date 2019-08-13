@@ -1,10 +1,9 @@
 FROM alpine:latest
-LABEL maintainer "Jessie Frazelle <jess@linux.com>"
+LABEL maintainer "Ellison Leão <ellisonleao@gmail.com>"
 
 RUN apk --no-cache add \
 	ca-certificates \
-	python \
-	py2-pip \
-	&& pip install httpie httpie-unixsocket
+	python3 \
+	&& pip3 install httpie httpie-unixsocket
 
 ENTRYPOINT [ "http" ]
