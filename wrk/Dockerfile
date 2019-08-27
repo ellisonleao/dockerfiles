@@ -1,5 +1,5 @@
 FROM alpine:latest
-LABEL maintainer "Jessie Frazelle <jess@linux.com>"
+LABEL maintainer "Ellison Leão <ellisonleao@gmail.com>"
 
 RUN apk --no-cache add \
 	ca-certificates \

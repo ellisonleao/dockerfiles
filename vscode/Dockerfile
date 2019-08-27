@@ -1,16 +1,5 @@
-# Visual Studio Code in a container
-#	NOTE: Needs the redering device (yeah... idk)
-#
-# docker run -d \
-#    -v /tmp/.X11-unix:/tmp/.X11-unix \
-#    -v $HOME:/home/user \
-#    -e DISPLAY=unix$DISPLAY \
-#    --device /dev/dri \
-#    --name vscode \
-#    jess/vscode
-
 FROM debian:bullseye-slim
-LABEL maintainer "Jessie Frazelle <jess@linux.com>"
+LABEL maintainer "Ellison Leão <ellisonleao@gmail.com>"
 
 # Tell debconf to run in non-interactive mode
 ENV DEBIAN_FRONTEND noninteractive
