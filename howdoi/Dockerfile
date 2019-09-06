@@ -1,13 +1,10 @@
-FROM alpine:latest
+FROM python:alpine
 LABEL maintainer "Ellison Leão <ellisonleao@gmail.com>"
 
 RUN apk --no-cache add \
-	ca-certificates \
-	python3 \
-    python3-dev \
     gcc \
-    libxml2-dev \
     musl-dev \
+    libxml2-dev \
     libxslt-dev \
 	&& pip3 --no-cache-dir install howdoi
 
