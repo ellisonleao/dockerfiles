@@ -1,6 +1,0 @@
-FROM alpine:latest
-LABEL maintainer "Ellison Leão <ellisonleao@gmail.com>"
-
-RUN apk --no-cache add htop
-
-CMD [ "htop" ]
